@@ -106,8 +106,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="cadastroMotorista.aspx" />
     <Content Include="cadastroPassageiro.aspx" />
     <Content Include="cadastroUsuario.aspx" />
+    <Content Include="cadastroVeiculo.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -171,6 +173,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="cadastroMotorista.aspx.cs">
+      <DependentUpon>cadastroMotorista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroMotorista.aspx.designer.cs">
+      <DependentUpon>cadastroMotorista.aspx</DependentUpon>
+    </Compile>
     <Compile Include="cadastroPassageiro.aspx.cs">
       <DependentUpon>cadastroPassageiro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -184,6 +193,13 @@
     </Compile>
     <Compile Include="cadastroUsuario.aspx.designer.cs">
       <DependentUpon>cadastroUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroVeiculo.aspx.cs">
+      <DependentUpon>cadastroVeiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroVeiculo.aspx.designer.cs">
+      <DependentUpon>cadastroVeiculo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

@@ -11,7 +11,7 @@ namespace ProjetoWebForms
 {
 
 
-    public partial class cadastroPassageiro
+    public partial class cadastroMotorista
     {
 
         /// <summary>

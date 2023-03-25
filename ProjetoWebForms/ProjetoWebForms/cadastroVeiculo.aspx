@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cadastroPassageiro.aspx.cs" Inherits="ProjetoWebForms.cadastroPassageiro" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cadastroVeiculo.aspx.cs" Inherits="ProjetoWebForms.cadastroVeiculo" %>
 
 <!DOCTYPE html>
 
@@ -10,17 +10,30 @@
 <body>
     <form id="form1" runat="server">
         <div id="divCadastro">
-            <asp:Label ID="LBTitulo" runat="server" Text="Cadastro de Passageiros" Font-Bold="True" Font-Italic="True" Font-Names="Arial Black" Font-Size="X-Large" ForeColor="#000099"></asp:Label>
+            <asp:Label ID="LBTitulo" runat="server" Text="Cadastro de Veículos" Font-Bold="True" Font-Italic="True" Font-Names="Arial Black" Font-Size="X-Large" ForeColor="#000099"></asp:Label>
             <br />
             <br />
             <table >
+                 <tr>
+
+                    <td class="auto-style1">
+                        <asp:Label ID="Label1" runat="server" Text="Tipo de Veículo"></asp:Label>
+                    </td>
+                    <td class="auto-style1">
+                    <asp:DropDownList ID="DropDownList1" runat="server" >
+                        <asp:ListItem>Van</asp:ListItem>
+                        <asp:ListItem>Carro</asp:ListItem>
+                        <asp:ListItem>Onibus</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
                 <tr>
                     <td class="auto-style1">
-                         <asp:Label ID="LBNome" runat="server" Text="Nome"></asp:Label>
+                         <asp:Label ID="LBNome" runat="server" Text="Placa"></asp:Label>
                     </td>
                     <td class="auto-style2">
                        
-                        <asp:TextBox ID="TBNome" runat="server" Width="205px"></asp:TextBox>
+                        <asp:TextBox ID="TBNome" runat="server" Width="134px"></asp:TextBox>
                        
                     </td>
    
@@ -29,7 +42,7 @@
                
                 <tr>
                     <td class="auto-style1">
-                        <asp:Label ID="LBCPF" runat="server" Text="CPF"></asp:Label>
+                        <asp:Label ID="LBCPF" runat="server" Text="Modelo"></asp:Label>
                     </td>
                     <td class="auto-style2">
                         <asp:TextBox ID="TBCPF" runat="server" Width="134px"></asp:TextBox>
@@ -37,58 +50,33 @@
       
                 </tr>
                
+               
+                
                 <tr>
                     <td class="auto-style1">
-                        <asp:Label ID="LBDataNasc" runat="server" Text="Data de Nascimento"></asp:Label>
+                        <asp:Label ID="LBEndereco" runat="server" Text="Marca"></asp:Label>
                     </td>
                     <td class="auto-style2">
-                        <asp:Calendar ID="CLDataNasc" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px">
-                            <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
-                            <NextPrevStyle VerticalAlign="Bottom" />
-                            <OtherMonthDayStyle ForeColor="#808080" />
-                            <SelectedDayStyle BackColor="#666666" Font-Bold="True" ForeColor="White" />
-                            <SelectorStyle BackColor="#CCCCCC" />
-                            <TitleStyle BackColor="#999999" BorderColor="Black" Font-Bold="True" />
-                            <TodayDayStyle BackColor="#CCCCCC" ForeColor="Black" />
-                            <WeekendDayStyle BackColor="#FFFFCC" />
-                        </asp:Calendar>
-                    </td>
-      
-                </tr>
-                 <tr>
-
-                    <td class="auto-style1">
-                        <asp:Label ID="Label1" runat="server" Text="UF"></asp:Label>
-                    </td>
-                    <td class="auto-style1">
-                    <asp:DropDownList ID="DropDownList1" runat="server" >
-                        <asp:ListItem>AL</asp:ListItem>
-                        <asp:ListItem>SE</asp:ListItem>
-                        <asp:ListItem>BA</asp:ListItem>
-                        <asp:ListItem>SP</asp:ListItem>
-                        <asp:ListItem>RJ</asp:ListItem>
-                        <asp:ListItem>PE</asp:ListItem>
-                        <asp:ListItem>RN</asp:ListItem>
-                        <asp:ListItem>AM</asp:ListItem>
-                        </asp:DropDownList>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">
-                        <asp:Label ID="LBEndereco" runat="server" Text="Endereço"></asp:Label>
-                    </td>
-                    <td class="auto-style2">
-                         <asp:TextBox ID="TBEndereco" runat="server" Width="205px"></asp:TextBox>
+                         <asp:TextBox ID="TBEndereco" runat="server" Width="134px"></asp:TextBox>
                     </td>
       
                 </tr>
                
                  <tr>
                     <td class="auto-style1">
-                        <asp:Label ID="Label2" runat="server" Text="Cidade"></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text="Ano"></asp:Label>
                     </td>
                     <td class="auto-style2">
-                         <asp:TextBox ID="TextBox1" runat="server" Width="205px"></asp:TextBox>
+                         <asp:TextBox ID="TextBox1" runat="server" Width="80px"></asp:TextBox>
+                    </td>
+      
+                </tr>
+                 <tr>
+                    <td class="auto-style1">
+                        <asp:Label ID="Label3" runat="server" Text="CPF Motorista"></asp:Label>
+                    </td>
+                    <td class="auto-style2">
+                        <asp:TextBox ID="TextBox2" runat="server" Width="134px"></asp:TextBox>
                     </td>
       
                 </tr>

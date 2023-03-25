@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cadastroPassageiro.aspx.cs" Inherits="ProjetoWebForms.cadastroPassageiro" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cadastroMotorista.aspx.cs" Inherits="ProjetoWebForms.cadastroMotorista" %>
 
 <!DOCTYPE html>
 
@@ -8,9 +8,9 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+      <form id="form1" runat="server">
         <div id="divCadastro">
-            <asp:Label ID="LBTitulo" runat="server" Text="Cadastro de Passageiros" Font-Bold="True" Font-Italic="True" Font-Names="Arial Black" Font-Size="X-Large" ForeColor="#000099"></asp:Label>
+            <asp:Label ID="LBTitulo" runat="server" Text="Cadastro de Motorista" Font-Bold="True" Font-Italic="True" Font-Names="Arial Black" Font-Size="X-Large" ForeColor="#000099"></asp:Label>
             <br />
             <br />
             <table >
@@ -55,7 +55,7 @@
                     </td>
       
                 </tr>
-                 <tr>
+                <tr>
 
                     <td class="auto-style1">
                         <asp:Label ID="Label1" runat="server" Text="UF"></asp:Label>
@@ -82,7 +82,7 @@
                     </td>
       
                 </tr>
-               
+                
                  <tr>
                     <td class="auto-style1">
                         <asp:Label ID="Label2" runat="server" Text="Cidade"></asp:Label>
@@ -166,6 +166,5 @@
         </div>
         
     </form>
-    
 </body>
 </html>
