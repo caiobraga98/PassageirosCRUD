@@ -13,5 +13,11 @@ namespace ProjetoWebForms
         {
 
         }
+
+        protected void BTCadastrar_Click(object sender, EventArgs e)
+        {
+            string url = "cadastroUsuario";
+            Response.Redirect(url);
+        }
     }
 }

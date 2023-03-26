@@ -38,7 +38,7 @@
             <br />
             <br />
             <asp:Button ID="BTLogar" runat="server" Text="Logar" />
-            <asp:Button ID="BTCadastrar" runat="server" Text="Novo Cadastro" />
+            <asp:Button ID="BTCadastrar" runat="server" Text="Novo Cadastro" OnClick="BTCadastrar_Click" />
 
         </div>
 
