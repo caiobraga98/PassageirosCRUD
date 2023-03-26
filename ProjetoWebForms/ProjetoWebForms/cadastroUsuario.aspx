@@ -102,70 +102,11 @@
         </div>
 
         <br />
-        <div id="divExibicao">
-            <table >
-                <tr>
-                    <td class="auto-style1">
-                         <asp:Label ID="LBNomeE" runat="server" Text=""></asp:Label>
-                    </td>
-                    <td class="auto-style2">
-                       <asp:Label ID="LBNomeE2" runat="server" Text=""></asp:Label>
-                        
-                       
-                    </td>
-   
-                </tr>
-                <tr>
-                    <td class="auto-style1">
-                        <asp:Label ID="LbSexoE" runat="server" Text=""></asp:Label>
-                    </td>
-                    <td class="auto-style2">
-                       <asp:Label ID="LbSexoE2" runat="server" Text=""></asp:Label>
-                    </td>
+        <asp:GridView ID="GridView1" runat="server" Width="832px">
+        </asp:GridView>
 
-                </tr>
-                <tr>
-                    <td class="auto-style1">
-                        <asp:Label ID="LBCPFE" runat="server" Text=""></asp:Label>
-                    </td>
-                    <td class="auto-style2">
-                       <asp:Label ID="LBCPFE2" runat="server" Text=""></asp:Label>
-                    </td>
-      
-                </tr>
-                <tr>
-                    <td class="auto-style1">
-                        <asp:Label ID="LBRGE" runat="server" Text=""></asp:Label>
-                    </td>
-                    <td class="auto-style2">
-                       <asp:Label ID="LBRGE2" runat="server" Text=""></asp:Label>
-                    </td>
-      
-                </tr>
-                <tr>
-                    <td class="auto-style1">
-                        <asp:Label ID="LBDataNascE" runat="server" Text=""></asp:Label>
-                    </td>
-                    <td class="auto-style2">
-                        <asp:Label ID="LBDataNascE2" runat="server" Text=""></asp:Label>
-                    </td>
-      
-                </tr>
-                <tr>
-                    <td class="auto-style1">
-                        <asp:Label ID="LBEnderecoE" runat="server" Text=""></asp:Label>
-                    </td>
-                    <td class="auto-style2">
-                         <asp:Label ID="LBEnderecoE2" runat="server" Text=""></asp:Label>
-                    </td>
-      
-                </tr>
-            </table>
-
-           
-
-
-        </div>
+        <br />
+       
         
     </form>
     

@@ -75,12 +75,12 @@ namespace ProjetoWebForms
                  LBDataNascE.Text = LBDataNasc.Text;
                  LBDataNascE2.Text = CLDataNasc.SelectedDate.ToShortDateString();
                  LBEnderecoE.Text = LBEndereco.Text;*/
-                LBEnderecoE2.Text = TBEndereco.Text;
-                string url = "Form2.aspx?nome=" + TBNome.Text + "&sexo=" +
-                    DDLSexo.SelectedItem.ToString() + "&cpf=" + TBCPF.Text + "&rg=" +
-                    TBRG.Text + "&dtnasc=" + CLDataNasc.SelectedDate.ToShortDateString() +
-                    "&endereco=" + TBEndereco.Text;
-                Response.Redirect(url);
+                //LBEnderecoE2.Text = TBEndereco.Text;
+                //string url = "Form2.aspx?nome=" + TBNome.Text + "&sexo=" +
+                //    DDLSexo.SelectedItem.ToString() + "&cpf=" + TBCPF.Text + "&rg=" +
+                //    TBRG.Text + "&dtnasc=" + CLDataNasc.SelectedDate.ToShortDateString() +
+                //    "&endereco=" + TBEndereco.Text;
+                //Response.Redirect(url);
 
             }
         }
