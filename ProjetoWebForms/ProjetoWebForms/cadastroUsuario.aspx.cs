@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoWebForms.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,15 @@ namespace ProjetoWebForms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            GridView1.Visible = false;
+        }
 
+        private void MostrarCadastro()
+        {
+            GridView1.Visible=true;
+            GridView1.DataSource=Usuario.usuarios;
+            GridView1.DataBind();  
+            
         }
 
         protected void BTCadastrar_Click(object sender, EventArgs e)
@@ -64,25 +73,20 @@ namespace ProjetoWebForms
             }
             else
             {
-                /* LBNomeE.Text = LBNome.Text;
-                 LBNomeE2.Text = TBNome.Text;
-                 LbSexoE.Text = LBSexo.Text;
-                 LbSexoE2.Text = DDLSexo.SelectedItem.ToString();
-                 LBCPFE.Text = LBCPF.Text;
-                 LBCPFE2.Text = TBCPF.Text;
-                 LBRGE.Text = LBRG.Text;
-                 LBRGE2.Text = TBRG.Text;
-                 LBDataNascE.Text = LBDataNasc.Text;
-                 LBDataNascE2.Text = CLDataNasc.SelectedDate.ToShortDateString();
-                 LBEnderecoE.Text = LBEndereco.Text;*/
-                //LBEnderecoE2.Text = TBEndereco.Text;
-                //string url = "Form2.aspx?nome=" + TBNome.Text + "&sexo=" +
-                //    DDLSexo.SelectedItem.ToString() + "&cpf=" + TBCPF.Text + "&rg=" +
-                //    TBRG.Text + "&dtnasc=" + CLDataNasc.SelectedDate.ToShortDateString() +
-                //    "&endereco=" + TBEndereco.Text;
-                //Response.Redirect(url);
-
+                var usuario = new Usuario();
+                usuario.nome= TBNome.Text;
+                usuario.cpf = TBCPF.Text;
+                usuario.nascimentoDt = CLDataNasc.SelectedDate.ToLocalTime();
+                usuario.Login = TextBox10.Text;
+                usuario.Senha = senha.Text;
+                usuario.sexo = DDLSexo.Text;
+                usuario.Salvar();
             }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            MostrarCadastro();
         }
     }
 }

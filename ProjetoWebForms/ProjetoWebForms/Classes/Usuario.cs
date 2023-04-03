@@ -7,8 +7,8 @@ namespace ProjetoWebForms.Classes
 {
     public class Usuario : Pessoa
     {
-        private string Login { get; set; }
-        private string Senha { get; set; }
+        public string Login { get; set; }
+        public string Senha { get; set; }
 
         public static List<Usuario> usuarios = new List<Usuario>();
 

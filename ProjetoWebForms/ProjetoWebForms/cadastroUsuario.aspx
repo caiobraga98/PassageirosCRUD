@@ -47,7 +47,7 @@
                     </td>
                     <td class="auto-style2">
 
-                        <input id="Password1" type="password"  />
+                       <asp:TextBox ID="senha" runat="server" Width="205px"></asp:TextBox>
 
                     </td>
                 </tr>
@@ -113,7 +113,7 @@
             <br />
             <br />
             <asp:Button ID="BTCadastrar" runat="server" Text="Cadastrar" OnClick="BTCadastrar_Click" />
-     
+            <asp:Button ID="Button1" runat="server" Text="Consultar" OnClick="Button1_Click" />
         </div>
 
         <br />

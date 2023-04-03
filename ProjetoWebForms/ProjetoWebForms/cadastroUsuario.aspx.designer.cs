@@ -78,6 +78,15 @@ namespace ProjetoWebForms
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
+        /// Controle senha.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox senha;
+
+        /// <summary>
         /// Controle LBSexo.
         /// </summary>
         /// <remarks>
@@ -175,6 +184,15 @@ namespace ProjetoWebForms
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BTCadastrar;
+
+        /// <summary>
+        /// Controle Button1.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
         /// Controle GridView1.
